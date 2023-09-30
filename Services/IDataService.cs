@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgoTrader.Domain.Services
 {
-    public interface IDataService<T> where T : class Entity
+    public interface IDataService<T>
     {
         // Somehow it figured out all these by itself!
         Task<IEnumerable<T>> GetAll();
