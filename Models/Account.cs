@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace AlgoTrader.Domain.Models
 {
-    public class Account
+    public class Account : DomainObject
     {
-        public int Id { get; set; }
         public User AccountHolder {  get; set; }
         public double Balance { get; set; }
         public IEnumerable<AssetTransaction> TransactionList { get; set; }

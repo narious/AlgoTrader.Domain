@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace AlgoTrader.Domain.Models
 {
-    public class Stock
+    public class Stock : DomainObject
     {
         // Could also embedd the stock into the database by using an override
-        public int Id { get; set; }
         public StockTicket_e Ticket { get; set; }
         public int Price { get; set; }
         public Currency_e Currency { get; set; }
